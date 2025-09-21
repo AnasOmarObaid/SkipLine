@@ -1,0 +1,57 @@
+/* Enhanced field styles */
+.form-floating .form-control:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.1);
+}
+.field-info {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+.image-upload-zone {
+  transition: all 0.3s ease;
+}
+.image-upload-zone:hover {
+  border-color: #4361ee;
+  background-color: rgba(67, 97, 238, 0.05);
+}
+.preview-field-highlight {
+  animation: highlight-field 1s ease;
+}
+@keyframes highlight-field {
+  0% {
+    background-color: rgba(67, 97, 238, 0.2);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.product-preview-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.current-image-container {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #e9ecef;
+}
+.current-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.current-image-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
